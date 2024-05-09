@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS File Link -->
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>LVSR Dashboard</title>
+  </head>
+  <body>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-l2 col-lg-2 p-0">
+            <div class="bg-linear p-3 min-vh-100">
+              <div class="p-2">
+                <a href="/dashboard.html">
+                  <img
+                  src="/assets/images/dashboard-logo.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+                </a>
+              </div>
+              <div class="">
+                <nav>
+                  <ul class="list-unstyled">
+                    <li class="mt-5">
+                      <a href="dashboard.html" class="text-decoration-none text-white">
+                        <div class="d-flex align-items-center gap-2 active p-2 rounded-3">
+                          <div>
+                            <img
+                              src="/assets/images/links-icon.svg"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <p class="m-0 link">Links</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="my-4">
+                      <a href="/visuals.html" class="text-decoration-none text-white">
+                        <div class="d-flex align-items-center gap-2 px-2">
+                          <div>
+                            <img
+                              src="/assets/images/visuals.svg"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <p class="m-0 link">Visuals</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="my-4">
+                      <a href="/insights.html" class="text-decoration-none text-white">
+                        <div class="d-flex align-items-center gap-2 px-2">
+                          <div>
+                            <img
+                              src="/assets/images/insights.svg"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <p class="m-0 link">Insights</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                 
+                    <li class="my-4">
+                      <a href="/settings.html" class="text-decoration-none text-white">
+                        <div class="d-flex align-items-center gap-2 px-2">
+                          <div>
+                            <img
+                              src="/assets/images/settings.svg"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <p class="m-0 link">Settings</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="my-4">
+                      <a
+                        href="/index.html"
+                        class="text-decoration-none text-white"
+                      >
+                        <div class="d-flex align-items-center gap-2 px-2">
+                          <div>
+                            <img
+                              src="/assets/images/logout.svg"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <p class="m-0 link">Logout</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-10 p-0">
+            <div class="bg-sky px-4 py-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <button class="border-0">
+                    <img
+                      src="/assets/images/menu-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <div class="pe-lg-3 pe-0">
+                  <div class="d-flex gap-3">
+                    <div>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >Terms & Conditions</a
+                      >
+                    </div>
+                    <div>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >Privacy Policy</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-profile p-4 border-bottom shadow-sm">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <div class="d-flex gap-4">
+                    <div>
+                      <img
+                        src="/assets/images/profile.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <div class="d-flex gap-2">
+                        <div><h3 class="name">Dan Vittorni</h3></div>
+                        <div>
+                          <a href="#">
+                            <img
+                              src="/assets/images/pencil-icon.svg"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <p class="text-secondary m-0 pb-1">
+                        Financial Advsor, Stockholm
+                      </p>
+                      <div class="">
+                        <a href="#" class="text-decoration-none">
+                          <img
+                            src="/assets/images/instagram.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                          <img
+                            src="/assets/images/twitter.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                          <img
+                            src="/assets/images/facebook.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                          <img
+                            src="/assets/images/linkedin.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pe-lg-5 pe-0">
+                  <a href="#">
+                    <img
+                      src="/assets/images/eye-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="px-4">
+              <div>
+                <h4 class="attached-links pt-2">Attached Links</h4>
+                <div class="d-flex justify-content-between pb-4">
+                  <div>
+                    <button
+                      class="bg-primary border-0 px-5 py-2 text-white rounded-3 btn-add-new"
+                    >
+                      Add new
+                    </button>
+                  </div>
+                  <div>
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="btn btn-primary bg-transparent border-0"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <img
+                        src="/assets/images/share-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </button>
+
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content custom-border-radius">
+                          <div class="modal-body px-4">
+                            <p class="custom-fw text-center">
+                              Share link to others
+                            </p>
+                            <div
+                              class="border border-1 border-dark rounded-pill py-2"
+                            >
+                              <div
+                                class="d-flex justify-content-between px-2 align-items-center"
+                              >
+                                <div class="d-flex align-items-center gap-3">
+                                  <div>
+                                    <img
+                                      src="/assets/images/share-logo-icon.svg"
+                                      class="img-fluid"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <p class="m-0">
+                                      lvsr.io/<span class="text-secondary"
+                                        >#Dan Vittorni</span
+                                      >
+                                    </p>
+                                  </div>
+                                </div>
+                                <div>
+                                  <button
+                                    class="bg-primary px-3 py-2 rounded-pill border-0"
+                                  >
+                                    <p class="m-0 text-white">Copy</p>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="text-secondary text-center py-2">
+                              lvsr link are secure short links made my LVSR
+                            </p>
+                            <p class="custom-fw">Share Via</p>
+                            <div
+                              class="d-flex justify-content-center align-items-center"
+                            >
+                              <div class="d-flex gap-4">
+                                <div
+                                  class="d-flex justify-content-center align-items-center"
+                                >
+                                  <a
+                                    href="#"
+                                    class="sharing-icon text-decoration-none text-dark"
+                                  >
+                                    <div
+                                      class="d-flex justify-content-center align-items-center"
+                                    >
+                                      <img
+                                        src="/assets/images/facebook-icon.svg"
+                                        class="img-fluid"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p class="text-center social-text py-1">
+                                      Facebook
+                                    </p>
+                                  </a>
+                                </div>
+                                <div
+                                  class="d-flex justify-content-center align-items-center"
+                                >
+                                  <a
+                                    href="#"
+                                    class="sharing-icon text-decoration-none text-dark"
+                                  >
+                                    <div
+                                      class="d-flex justify-content-center align-items-center"
+                                    >
+                                      <img
+                                        src="/assets/images/whatsapp-icon.svg"
+                                        class="img-fluid"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p class="text-center social-text py-1">
+                                      WhatsaApp
+                                    </p>
+                                  </a>
+                                </div>
+                                <div
+                                  class="d-flex justify-content-center align-items-center"
+                                >
+                                  <a
+                                    href="#"
+                                    class="sharing-icon text-decoration-none text-dark"
+                                  >
+                                    <div
+                                      class="d-flex justify-content-center align-items-center"
+                                    >
+                                      <img
+                                        src="/assets/images/linkedin-icon.svg"
+                                        class="img-fluid"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p class="text-center social-text py-1">
+                                      LinkedIn
+                                    </p>
+                                  </a>
+                                </div>
+                                <div
+                                  class="d-flex justify-content-center align-items-center"
+                                >
+                                  <a
+                                    href="#"
+                                    class="sharing-icon text-decoration-none text-dark"
+                                  >
+                                    <div
+                                      class="d-flex justify-content-center align-items-center"
+                                    >
+                                      <img
+                                        src="/assets/images/X-icon.svg"
+                                        class="img-fluid"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p class="text-center social-text py-1">
+                                      X
+                                    </p>
+                                  </a>
+                                </div>
+                                <div
+                                  class="d-flex justify-content-center align-items-center"
+                                >
+                                  <a
+                                    href="#"
+                                    class="sharing-icon text-decoration-none text-dark"
+                                  >
+                                    <div
+                                      class="d-flex justify-content-center align-items-center"
+                                    >
+                                      <img
+                                        src="/assets/images/instagram-icon.svg"
+                                        class="img-fluid"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p class="text-center social-text py-1">
+                                      Instagram
+                                    </p>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Insert Links Section Started -->
+              <div class="d-flex justify-content-between">
+                <div class="d-flex gap-2 align-items-center">
+                  <div class="custom-links-shadow px-3 py-2">
+                    <img
+                      src="/assets/images/link-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h6 class="custom-fw m-0">Insert Link</h6>
+                  </div>
+                </div>
+                <div class="d-flex gap-5 align-items-center">
+                  <div>
+                    <div class="form-check form-switch">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="flexSwitchCheckChecked"
+                        checked
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="bg-dark rounded-3 text-white border-0 px-4 py-1"
+                    >
+                      Update
+                    </button>
+                  </div>
+                  <div>
+                    <div class="dropdown">
+                      <button
+                        class="btn"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <img
+                          src="/assets/images/dropdown-icon.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </button>
+                      <ul
+                        class="dropdown-menu shadow"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">Remove</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="px-4">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex gap-2 align-items-center">
+                  <div class="custom-links-shadow px-3 py-2">
+                    <img
+                      src="/assets/images/youtube-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h6 class="custom-fw m-0">YouTube</h6>
+                    <p class="text-secondary m-0">
+                      https://youtu.be/xn_nOKQ3Pb0?si=TiVyC3XuKjnJsKrf
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex gap-5 align-items-center">
+                  <div>
+                    <div class="form-check form-switch">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="flexSwitchCheckChecked"
+                        checked
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="bg-dark rounded-3 text-white border-0 px-4 py-1"
+                    >
+                      Update
+                    </button>
+                  </div>
+                  <div>
+                    <div class="dropdown">
+                      <button
+                        class="btn"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <img
+                          src="/assets/images/dropdown-icon.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </button>
+                      <ul
+                        class="dropdown-menu shad"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">Remove</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
