@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <title>LVSR - Add Social Link</title>
+    <title>LVSR - Social Link Added Successfully</title>
   </head>
   <body>
     <section>
@@ -294,7 +294,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-8">
-                  <div class="p-4">
+                  <div class="px-4 pt-4 pb-2">
                     <h5 class="custom-fw">Add link to your social accounts</h5>
                     <p class="text-secondary">
                       Make your profile easy to accessible by adding your social
@@ -579,12 +579,124 @@
                       </div>
                     </div>
                     <a
-                      class="btn btn bg-primary px-4 text-white custom-fw"
+                      class="btn btn bg-primary px-4 text-white custom-fw mb-4"
                       data-bs-toggle="modal"
                       href="#exampleModalToggle"
                       role="button"
                       >Add Social Link</a
                     >
+                    <div>
+                      <div class="d-flex justify-content-between mt-3">
+                        <div class="d-flex gap-2 align-items-center">
+                          <div class="">
+                            <img
+                              src="./assets/images/facebook-added-icon.svg"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h6 class="custom-fw m-0">Facebook</h6>
+                            <p class="text-secondary m-0 fs-small">
+                              https://youtu.be/xn_nOKQ3Pb0?si=TiVyC3XuKjnJsKrf
+                            </p>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-5 align-items-center">
+                          <div>
+                            <button
+                              type="button"
+                              class="btn bg-dark rounded-3 text-white border-0 px-4 py-1"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              Update
+                            </button>
+                          </div>
+                          <div>
+                            <div class="dropdown">
+                              <button
+                                class="btn"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <img
+                                  src="./assets/images/dropdown-icon.svg"
+                                  class="img-fluid"
+                                  alt=""
+                                />
+                              </button>
+                              <ul
+                                class="dropdown-menu shadow"
+                                aria-labelledby="dropdownMenuButton1"
+                              >
+                                <li>
+                                  <a class="dropdown-item" href="#">Remove</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="d-flex justify-content-between mt-3">
+                        <div class="d-flex gap-2 align-items-center">
+                          <div class="">
+                            <img
+                              src="./assets/images/instragram-added-icon.svg"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h6 class="custom-fw m-0">Instagram</h6>
+                            <p class="text-secondary m-0 fs-small">
+                              https://youtu.be/xn_nOKQ3Pb0?si=TiVyC3XuKjnJsKrf
+                            </p>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-5 align-items-center">
+                          <div>
+                            <button
+                              type="button"
+                              class="btn bg-dark rounded-3 text-white border-0 px-4 py-1"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              Update
+                            </button>
+                          </div>
+                          <div>
+                            <div class="dropdown">
+                              <button
+                                class="btn"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <img
+                                  src="./assets/images/dropdown-icon.svg"
+                                  class="img-fluid"
+                                  alt=""
+                                />
+                              </button>
+                              <ul
+                                class="dropdown-menu shadow"
+                                aria-labelledby="dropdownMenuButton1"
+                              >
+                                <li>
+                                  <a class="dropdown-item" href="#">Remove</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -594,17 +706,88 @@
       </div>
     </section>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content logout-modal">
+          <div class="modal-body py-4">
+            <div class="">
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <a href="#">
+                    <img
+                      src="/assets/images/left-arrow-icon.svg"
+                      class=""
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                      class="img-fluid shadow rounded-circle btn-close"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="instagram-circle">
+                  <img
+                    src="./assets/images/instagram-circle.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div></div>
+              </div>
+              <div>
+                <ol>
+                  <li>
+                    <p class="m-0">Copy your URL link from Instagram</p>
+                  </li>
+                  <li>
+                    <p class="m-0">Paste the link in field below</p>
+                  </li>
+                  <li>
+                    <p class="m-0">After paste the link click on add button.</p>
+                  </li>
+                </ol>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-lg-8">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill w-100"
+                    placeholder="https://youtu.be/xn_nOKQ3Pb0?si=TiVyC3XuKjnJsKrf"
+                  />
+                </div>
+                <div class="col-12 col-lg-3">
+                  <button
+                    id="updateButton"
+                    class="btn rounded-pill bg-primary text-white px-4"
+                  >
+                    Update
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Social Link Modal -->
 
     <script>
       document
-        .getElementById("myButton")
+        .getElementById("updateButton")
         .addEventListener("click", function () {
           // Using Sweet Alert with image and title
           Swal.fire({
             html:
               '<img src="./assets/images/added-icon.svg" alt="Custom Image" class="custom-img">' +
-              '<h5 style="font-weight: 600;">Social Link Successfully Uploaded</h5>',
+              '<h5 style="font-weight: 600;">Updated Successfully</h5>',
             showConfirmButton: false,
           });
         });

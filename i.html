@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Alert Example</title>
+<!-- Include Sweet Alert CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<h2>Click the button to see the Sweet Alert!</h2>
+<button id="myButton">Show Sweet Alert</button>
+
+<!-- Include Sweet Alert JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+<script>
+    document.getElementById("myButton").addEventListener("click", function() {
+        // Using Sweet Alert
+        Swal.fire({
+            title: 'Hello!',
+            text: 'This is a Sweet Alert!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+    });
+</script>
+
+</body>
+</html>

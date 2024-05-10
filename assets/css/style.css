@@ -25,7 +25,7 @@ body {
 }
 
 .custom-text-primary {
-  color: #337CCC;
+  color: #337ccc;
 }
 
 .fw-500 {
@@ -165,7 +165,7 @@ body {
 .form-check-input:focus {
   border-color: none;
   outline: 0;
-  box-shadow:transparent;
+  box-shadow: transparent;
 }
 
 .custom-links-shadow {
@@ -332,7 +332,6 @@ nav ul li a .active {
   margin-top: 6px;
 }
 
-
 .container-password-input {
   display: flex;
   flex-direction: column;
@@ -387,8 +386,8 @@ nav ul li a .active {
 }
 
 .btn-pricing:hover {
-  background-color: #337CCC;
-  border: 1px solid #337CCC;
+  background-color: #337ccc;
+  border: 1px solid #337ccc;
   color: #fff;
 }
 
@@ -401,19 +400,19 @@ nav ul li a .active {
   z-index: 3;
   border-color: none;
   outline: 0;
-  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
 }
 
 .message-input:focus {
-  box-shadow: 1px 1px 1px 1px #E6F3F8;
+  box-shadow: 1px 1px 1px 1px #e6f3f8;
 }
 
 .message-textarea:focus {
-  box-shadow: 1px 1px 1px 1px #E6F3F8;
+  box-shadow: 1px 1px 1px 1px #e6f3f8;
 }
 
 .btn-bg-message {
-  background-color: #1170A6;
+  background-color: #1170a6;
 }
 
 .logout-modal {
@@ -421,49 +420,69 @@ nav ul li a .active {
   border-radius: 30px;
 }
 
-
 /* CSS */
 nav ul li {
   padding: 8px 15px;
   border-radius: 8px;
 }
 
-   /* Custom CSS for Navbar */
-   nav ul li.active {
-    background-color: #1170A6;
-  }
-  
-  nav ul li:hover {
-    background-color: #1170A6;
-  }
+/* Custom CSS for Navbar */
+nav ul li.active {
+  background-color: #1170a6;
+}
 
-  .custom-nav-width {
-    min-width: 210px;
-  }
+nav ul li:hover {
+  background-color: #1170a6;
+}
 
-  /* Add Social Link Page CSS */
+.custom-nav-width {
+  min-width: 210px;
+}
 
-  .profile-pic {
-    height: 100px;
-    width: 100px;
-  }
+/* Add Social Link Page CSS */
 
-  .profile-pic img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+.profile-pic {
+  height: 100px;
+  width: 100px;
+}
 
-  .share-link-bg {
-    background-color: #018FDE;
-  }
+.profile-pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
-  .modal-icon {
-    height: 50px;
-    width: 50px;
-  }
+.share-link-bg {
+  background-color: #018fde;
+}
 
-  .modal-icon img {
-    height: 100%;
-    width: 100%;
-  }
+.modal-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.modal-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.instagram-circle {
+  height: 130px;
+  width: 130px;
+}
+
+.instagram-circle img {
+  height: 100%;
+  width: 100%;
+}
+
+.swal2-popup {
+  font-weight: 900;
+  border-radius: 35px !important; /* Add border radius */
+  height: 305px; /* Set height */
+}
+
+.custom-img {
+  width: 138px;
+  height: 138px;
+}
