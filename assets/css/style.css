@@ -245,7 +245,7 @@ body {
 }
 
 nav ul li a .active {
-  background-color: #1170a6;
+  /* background-color: #1170a6; */
 }
 
 /* Insights Page CSS */
@@ -420,3 +420,50 @@ nav ul li a .active {
   /* width: 350px; */
   border-radius: 30px;
 }
+
+
+/* CSS */
+nav ul li {
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+   /* Custom CSS for Navbar */
+   nav ul li.active {
+    background-color: #1170A6;
+  }
+  
+  nav ul li:hover {
+    background-color: #1170A6;
+  }
+
+  .custom-nav-width {
+    min-width: 210px;
+  }
+
+  /* Add Social Link Page CSS */
+
+  .profile-pic {
+    height: 100px;
+    width: 100px;
+  }
+
+  .profile-pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .share-link-bg {
+    background-color: #018FDE;
+  }
+
+  .modal-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .modal-icon img {
+    height: 100%;
+    width: 100%;
+  }
