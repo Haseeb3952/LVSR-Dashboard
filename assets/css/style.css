@@ -486,3 +486,26 @@ nav ul li:hover {
   width: 138px;
   height: 138px;
 }
+
+
+/* QR Code CSS */
+
+.qr-code-picture {
+  height: 200px;
+  width: 200px;
+  box-shadow: 0px 5.97px 16.43px 0px #00000017;
+
+}
+
+.qr-code-picture img {
+  height: 100%;
+  width: 100%;
+}
+
+.custom-links {
+  transition: 0.3s;
+}
+
+.custom-links:hover {
+  background-color: #E6F3F8 !important;
+}

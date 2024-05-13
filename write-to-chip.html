@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <title>Insights</title>
+    <title>LVSR - QR Code</title>
   </head>
   <body>
     <section>
@@ -78,7 +78,7 @@
                         </div>
                       </a>
                     </li>
-                    <li class="my-3 active">
+                    <li class="my-3">
                       <a
                         href="/insights.html"
                         class="text-decoration-none text-white"
@@ -99,14 +99,12 @@
                         </div>
                       </a>
                     </li>
-                    <li class="my-3">
+                    <li class="my-3 active">
                       <a
                         href="/settings.html"
                         class="text-decoration-none text-white"
                       >
-                        <div
-                          class="d-flex align-items-center active gap-2 px-2"
-                        >
+                        <div class="d-flex align-items-center gap-2 px-2">
                           <div>
                             <img
                               src="./assets/images/settings.svg"
@@ -174,100 +172,154 @@
                 </div>
               </div>
             </div>
-            <div class="custom-insights-bg">
-              <div class="px-4">
-                <h4 class="attached-links py-2">Overview</h4>
-                <div class="d-flex justify-content-end">
-                  <div class="dropdown">
-                    <button
-                      class="btn border border-1 border-dark dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Last 7 days
-                    </button>
-                    <ul
-                      class="dropdown-menu shadow"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li>
-                        <a class="dropdown-item" href="#">Last 14 days</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Last 30 days</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Last 2 month</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="row my-1 gy-4">
-                  <div class="col-12 col-md-4">
-                    <div
-                      class="bg-white rounded-3 px-3 pt-3 pb-5 custom-cards-shadow"
-                    >
-                      <p class="m-0">Clicks</p>
-                      <h1 class="custom-fw">235</h1>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <div
-                      class="bg-white rounded-3 px-3 pt-3 pb-5 custom-cards-shadow"
-                    >
-                      <p class="m-0">Views</p>
-                      <h1 class="custom-fw">658</h1>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <div
-                      class="bg-white rounded-3 px-3 pt-3 pb-5 custom-cards-shadow"
-                    >
-                      <p class="m-0">Time on app</p>
-                      <h1 class="custom-fw">23:45:15</h1>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Graph -->
-
-                <div class="bg-white p-4 my-4 shadow rounded-3">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5 class="custom-fw">Activity</h5>
-                    </div>
-                    <div>
-                      <div class="dropdown">
-                        <button
-                          class="btn border border-1 border-secondary dropdown-toggle"
-                          type="button"
-                          id="dropdownMenuButton1"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Last 7 days
-                        </button>
-                        <ul
-                          class="dropdown-menu shadow"
-                          aria-labelledby="dropdownMenuButton1"
-                        >
-                          <li>
-                            <a class="dropdown-item" href="#">Last 14 days</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Last 30 days</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Last 2 month</a>
-                          </li>
-                        </ul>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="m-3">
+                    <div class="d-flex gap-5 align-items-center">
+                      <div>
+                        <div class="profile-pic">
+                          <img
+                            src="https://img.freepik.com/free-photo/indoor-picture-cheerful-handsome-young-man-having-folded-hands-looking-directly-smiling-sincerely-wearing-casual-clothes_176532-10257.jpg?t=st=1715340829~exp=1715344429~hmac=4a90fff8deaa7e8d84ac16ff415860e1ec603b4f0708f5fd6fabb197eee942e1&w=900"
+                            class="img-fluid rounded-circle"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="border rounded-3 border-1 px-3 py-2">
+                          <div class="d-flex gap-5">
+                            <div>
+                              <p class="text-secondary m-0">
+                                <span class="text-dark">lvsr.io/</span>#Dan
+                                Vittorni
+                              </p>
+                            </div>
+                            <div>
+                              <a href="#" class="text-decoration-none">
+                                <div class="d-flex gap-2">
+                                  <div>
+                                    <img
+                                      src="./assets/images/copy-icon.svg"
+                                      class="img-fluid"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <p class="m-0">Copy</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-
-                  <canvas id="myChart" width="400" height="100"></canvas>
+                </div>
+              </div>
+            </div>
+            <hr class="mb-0" />
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 col-lg-4 p-0">
+                  <div class="p-3 bg-sky min-vh-100">
+                    <h5>Share your link</h5>
+                    <a
+                      href="./share-link.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="d-flex gap-3 px-3 py-2 my-2 rounded-pill">
+                        <div>
+                          <img
+                            src="./assets/images/share-link-icon-black.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0 text-dark">
+                            Add link to your social media
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="./share-link-to-other.html"
+                      class="text-decoration-none my-1"
+                    >
+                      <div
+                        class="d-flex align-items-center gap-3 px-3 py-2 my-2 rounded-pill"
+                      >
+                        <div>
+                          <img
+                            src="./assets/images/share-link-to-others-icon.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0 text-dark">Share link to other</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="./my-qr.html" class="text-decoration-none my-1">
+                      <div
+                        class="d-flex align-items-center gap-3 px-3 py-2 my-2 rounded-pill"
+                      >
+                        <div>
+                          <img
+                            src="./assets/images/qr-code-icon.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0 text-dark">My QR code</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="text-decoration-none my-1">
+                      <div
+                        class="d-flex align-items-center share-link-bg gap-3 px-3 py-2 rounded-pill"
+                      >
+                        <div>
+                          <img
+                            src="./assets/images/pencil-icon-white.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0 text-white">Write to chip</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                  <div class="px-4 pt-4 pb-2">
+                    <h5 class="custom-fw">Write link to your chip</h5>
+                    <p class="text-secondary">
+                      Simply TAp your NFC will enabled device against <br />
+                      your phone to transfer and store your link to <br />
+                      card
+                    </p>
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <div class="">
+                        <img
+                          src="./assets/images/NFC.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <p class="text-danger custom-fw text-center mt-4">
+                      Tap your NFC in mobile view only
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -276,49 +328,9 @@
       </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include Sweet Alert JavaScript -->
 
-    <script>
-      var data = {
-        labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-        datasets: [
-          {
-            label: "Views",
-            data: [0, 0, 40, 20, 60, 0, 0],
-            fill: false,
-            borderColor: "#5ACEFF",
-            borderWidth: 1,
-            tension: 0.1,
-            point: {
-              radius: 0, // Set the radius to 0 to remove bubbles
-            },
-          },
-        ],
-      };
-      var ctx = document.getElementById("myChart").getContext("2d");
-      var myChart = new Chart(ctx, {
-        type: "line",
-        data: data,
-        options: {
-          // Add any customization options here
-        },
-      });
-
-      var options = {
-        scales: {
-          y: {
-            min: 0, // Set the minimum value of the scale
-            max: 100, // Set the maximum value of the scale
-            ticks: {
-              stepSize: 20, // Set the step size between each value
-              callback: function (value, index, values) {
-                return value; // Return the value as it is
-              },
-            },
-          },
-        },
-      };
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
