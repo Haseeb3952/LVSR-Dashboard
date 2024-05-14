@@ -28,6 +28,14 @@ body {
   color: #337ccc;
 }
 
+.custom-bg-primary {
+  background-color: #337CCC;
+}
+
+.btn-store-bg {
+  background-color: #337CCC;
+}
+
 .fw-500 {
   font-weight: 500;
 }
@@ -173,6 +181,34 @@ body {
   border-radius: 11.2827px;
 }
 
+.btn-add {
+  border-radius: 0px 23.5px 23.5px 0px;
+}
+
+.name-input {
+  border-radius: 23.5px 0px 0px 23.5px;
+  border-right: 0.51px solid #B1B1B1;
+}
+
+.link-input {
+  border-radius: 0px 0px 0px 0px;
+  border: 0.51px solid #B1B1B1;
+}
+
+.link-input-second {
+  border-radius: 23.5px 0px 0px 23.5px;
+  border: 0.51px solid #B1B1B1;
+}
+
+.scroll-links {
+  max-height: 165px; 
+  overflow-y: scroll;
+}
+
+.customized-link-input {
+  border-color: #B1B1B1;
+  border: 1px solid #B1B1B1;
+}
 /* Visuals Page CSS */
 
 .nav-pills .nav-link.active,
@@ -244,9 +280,7 @@ body {
   height: 35px;
 }
 
-nav ul li a .active {
-  /* background-color: #1170a6; */
-}
+ 
 
 /* Insights Page CSS */
 
@@ -508,4 +542,56 @@ nav ul li:hover {
 
 .custom-links:hover {
   background-color: #E6F3F8 !important;
+}
+
+/* Store Page CSS */
+
+
+.product-bg {
+  background-color: #D9d9d9;
+}
+.product-image {
+  height: 250px;
+  width: 250px;
+}
+
+.product-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.fw-off-price {
+  font-weight: 400;
+}
+
+
+/* Cart Page CSS */
+
+.product-picture-bg {
+  background-color: #e0f4ff;
+}
+
+.product-picture {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.product-picture img {
+  height: 100%;
+  width: 100%;
+}
+
+.cross-icon {
+  height: 20px;
+  width: 20px;
+  background-color: #EAEAEA;
+}
+
+@media (min-width: 767.98px) {
+  .divider {
+    display: block;
+    visibility: hidden;
+    font-size: 0;
+  }
 }
