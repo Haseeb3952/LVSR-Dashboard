@@ -18,25 +18,40 @@
   <body>
     <section>
       <div class="container">
-        <div class="position-relative mt-5">
-          <h2 class="custom-fw">Shopping Cart</h2>
-          <div class="position-absolute end-0 top-0 cart-icon">
-            <span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary"
-            >
-              2
-              <span class="visually-hidden">unread messages</span>
-            </span>
+        <div class="row mt-5">
+          <div class="col-12 col-lg-6">
+            <h2 class="custom-fw">Shopping Cart</h2>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="d-flex justify-content-end">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/cart-icon.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+                 
+                  <span class="position-absolute top-0 end-0 cart-icon translate-middle badge rounded-pill btn-store-bg">
+                    2   
+                  </span>
+                
+              </div>
+            </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-12 col-lg-9">
-            <div class="border custom-border-radius p-3 position-relative mt-3">
+            <div
+              id="productContainer"
+              class="border custom-border-radius p-3 position-relative mt-3"
+            >
               <div
                 class="position-absolute top-0 end-0 m-2 cross-icon rounded-circle d-flex justify-content-center align-items-center"
               >
                 <a
                   href="#"
+                  id="closeButton"
                   class="d-flex justify-content-center align-items-center"
                 >
                   <img
@@ -60,9 +75,7 @@
                     </div>
                     <div>
                       <h5 class="custom-fw mb-1">Bose Headphone</h5>
-                      <p class="text-secondary m-0 custom-fw pb-1">
-                        Color: Black
-                      </p>
+                      <p class="text-secondary m-0 fw-500 pb-1">Color: Black</p>
                       <p class="text-secondary fs-small m-0">
                         Gentle formulas to make sure your
                         <span class="divider"></span> skin stays health,
@@ -99,12 +112,16 @@
                 </div>
               </div>
             </div>
-            <div class="border custom-border-radius p-3 position-relative mt-3">
+            <div
+              id="productContainer2"
+              class="border custom-border-radius p-3 position-relative mt-3"
+            >
               <div
                 class="position-absolute top-0 end-0 m-2 cross-icon rounded-circle d-flex justify-content-center align-items-center"
               >
                 <a
                   href="#"
+                  id="closeButton"
                   class="d-flex justify-content-center align-items-center"
                 >
                   <img
@@ -128,9 +145,7 @@
                     </div>
                     <div>
                       <h5 class="custom-fw mb-1">Bose Headphone</h5>
-                      <p class="text-secondary m-0 custom-fw pb-1">
-                        Color: Black
-                      </p>
+                      <p class="text-secondary m-0 fw-500 pb-1">Color: Black</p>
                       <p class="text-secondary fs-small m-0">
                         Gentle formulas to make sure your
                         <span class="divider"></span> skin stays health,
@@ -167,12 +182,16 @@
                 </div>
               </div>
             </div>
-            <div class="border custom-border-radius p-3 position-relative mt-3">
+            <div
+              id="productContainer3"
+              class="border custom-border-radius p-3 position-relative mt-3"
+            >
               <div
                 class="position-absolute top-0 end-0 m-2 cross-icon rounded-circle d-flex justify-content-center align-items-center"
               >
                 <a
                   href="#"
+                  id="closeButton"
                   class="d-flex justify-content-center align-items-center"
                 >
                   <img
@@ -196,9 +215,7 @@
                     </div>
                     <div>
                       <h5 class="custom-fw mb-1">Bose Headphone</h5>
-                      <p class="text-secondary m-0 custom-fw pb-1">
-                        Color: Black
-                      </p>
+                      <p class="text-secondary m-0 fw-500 pb-1">Color: Black</p>
                       <p class="text-secondary fs-small m-0">
                         Gentle formulas to make sure your
                         <span class="divider"></span> skin stays health,
@@ -231,6 +248,46 @@
                     class="d-flex justify-content-lg-center justify-content-end"
                   >
                     <p class="custom-fw m-0">$ 78.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-4 align-items-center gy-3">
+              <div class="col-12 col-lg-3">
+                <div>
+                  <a href="#">
+                    <button
+                      class="btn btn-catalog bg-transparent custom-fw fs-small py-2"
+                    >
+                      <div class="d-flex gap-2 align-items-center">
+                        <div>
+                          <img
+                            src="./assets/images/left-arrow.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0">Back to catalog</p>
+                        </div>
+                      </div>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5">
+                <div class="d-flex gap-1 align-items-center">
+                  <div>
+                    <img
+                      src="./assets/images/info-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <p class="text-secondary m-0 fs-small">
+                      Delivery charges will add at checkout
+                    </p>
                   </div>
                 </div>
               </div>
@@ -239,7 +296,7 @@
           <div class="col-12 col-lg-3">
             <div class="border border-1 mt-3 p-3 custom-border-radius">
               <h3 class="custom-fw m-0">$ 230.67</h3>
-              <hr>
+              <hr />
               <div class="d-flex justify-content-between">
                 <div>
                   <p>Discount</p>
@@ -257,15 +314,17 @@
                 </div>
               </div>
               <button
-                  class="btn btn-store-bg custom-fw border-0 text-white px-4 py-2 rounded-3 w-100"
-                >
+                class="btn btn-store-bg custom-fw border-0 text-white px-4 py-2 rounded-3 w-100"
+              >
                 Checkout
-                </button>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Increment Decrement Script -->
 
     <script>
       function increment() {
@@ -281,6 +340,34 @@
           quantityElement.innerText = currentQuantity - 1;
         }
       }
+    </script>
+
+    <!-- Product Remove -->
+
+    <script>
+      // Function to handle fade-out animation
+      function fadeOut(element) {
+        element.style.opacity = 1;
+
+        (function fade() {
+          if ((element.style.opacity -= 0.1) < 0) {
+            element.style.display = "none";
+          } else {
+            requestAnimationFrame(fade);
+          }
+        })();
+      }
+
+      // Get the close button element
+      var closeButton = document.getElementById("closeButton");
+
+      // Get the product container element
+      var productContainer = document.getElementById("productContainer");
+
+      // Attach click event listener to the close button
+      closeButton.addEventListener("click", function () {
+        fadeOut(productContainer);
+      });
     </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
