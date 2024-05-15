@@ -200,6 +200,14 @@ body {
   border: 0.51px solid #B1B1B1;
 }
 
+.link-input-second:focus {
+  color: #212529;
+  border-color: #B1B1B1;
+  outline: 0;
+  box-shadow: none;
+
+}
+
 .scroll-links {
   max-height: 165px; 
   overflow-y: scroll;
@@ -645,6 +653,7 @@ nav ul li:hover {
   background-color: #0192E3;
 }
 
+ 
 
 @media (min-width: 767.98px) {
   .divider {
@@ -653,3 +662,7 @@ nav ul li:hover {
     font-size: 0;
   }
 }
+
+
+
+ 

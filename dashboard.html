@@ -252,6 +252,7 @@
                 </div>
               </div>
             </div>
+            <div>
             <div class="px-4">
               <div>
                 <h4 class="attached-links pt-2">Attached Links</h4>
@@ -307,9 +308,6 @@
                             </div>
 
                             <div class="scroll-links px-2">
-                             
-                            
-                               
                               <a
                                 href="#"
                                 data-bs-target="#exampleModalToggle2"
@@ -339,7 +337,7 @@
                                   />
                                 </div>
                               </a>
-                              
+
                               <a
                                 href="#"
                                 class="d-flex justify-content-between text-decoration-none text-dark mb-3"
@@ -362,7 +360,7 @@
                                   <p class="m-0 text-primary">Already Added</p>
                                 </div>
                               </a>
-                              
+
                               <a
                                 href="#"
                                 data-bs-target="#exampleModalToggle2"
@@ -451,7 +449,6 @@
                                 </div>
                               </a>
                             </div>
-                            
                           </div>
                         </div>
                       </div>
@@ -664,7 +661,7 @@
                   </div>
                   <div>
                     <button
-                      class="bg-dark rounded-3 text-white border-0 px-4 py-1"
+                      class="bg-dark rounded-3 text-white border-0 px-4 py-1"  data-bs-toggle="modal" data-bs-target="#exampleModalToggleUpdate"
                     >
                       Update
                     </button>
@@ -759,6 +756,7 @@
             </div>
             <hr />
           </div>
+          </div>
         </div>
       </div>
     </section>
@@ -778,31 +776,38 @@
             </p>
             <h6 class="fw-bold">YouTube</h6>
 
-            <div class="d-flex gap-2 align-items-center">
-              <div class="custom-links-shadow px-3 py-2">
-                <img
-                  src="./assets/images/youtube-icon.svg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div>
-                <div class="border border-1 rounded-pill d-flex">
-                  <div>
-                    <input
-                      type="text"
-                      class="form-control link-input-second"
-                      placeholder="Enter link here"
+            <div class="row">
+              <div class="col-2">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="custom-links-shadow px-3 py-2">
+                    <img
+                      src="./assets/images/youtube-icon.svg"
+                      class="img-fluid"
+                      alt=""
                     />
                   </div>
-                  <div>
+                </div>
+              </div>
+              <div class="col-10">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control link-input-second"
+                    placeholder="Enter link here"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                  />
+                  <span
+                    class="input-group-text p-0 bg-transparent border-0"
+                    id="basic-addon2"
+                  >
                     <button
                       class="btn custom-bg-primary btn-add text-white"
                       id="myButton"
                     >
                       Add
                     </button>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -811,21 +816,54 @@
       </div>
     </div>
 
+    <!-- Update Modal -->
+<div class="modal fade" id="exampleModalToggleUpdate" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content logout-modal">
+      <div class="modal-body p-4">
+        <div class="">
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <a href="#">
+                <img src="/assets/images/left-arrow-icon.svg" data-bs-dismiss="modal" aria-label="Close" class="img-fluid rounded-circle" alt="" />
+              </a>
+            </div>
+            <div class="instagram-circle">
+              <img src="./assets/images/instagram-circle.svg" class="img-fluid" alt="" />
+            </div>
+            <div></div>
+          </div>
+          <div>
+            <ol>
+              <li>
+                <p class="m-0">Copy your URL link from Instagram</p>
+              </li>
+              <li>
+                <p class="m-0">Paste the link in field below</p>
+              </li>
+              <li>
+                <p class="m-0">After pasting the link click on the add button.</p>
+              </li>
+            </ol>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <input type="text" class="form-control rounded-pill w-100" placeholder="Paste link here" />
+            </div>
+            <div class="col-12 col-lg-2">
+              <button id="updateButton" class="btn rounded-pill bg-primary text-white px-4">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <!-- Include Sweet Alert JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
-    <script>
-      document
-        .getElementById("myButton")
-        .addEventListener("click", function () {
-          // Using Sweet Alert with image and title
-          Swal.fire({
-            html:
-              '<img src="./assets/images/added-icon.svg" alt="Custom Image" class="custom-img">' +
-              '<h5 style="font-weight: 600;">Social Link Successfully Added</h5>',
-            showConfirmButton: false,
-          });
-        });
-    </script>
+ 
     <script>
       document
         .getElementById("addButton")
@@ -839,6 +877,37 @@
           });
         });
     </script>
+
+        <!-- Sweet Alert JavaScript -->
+
+        <script>
+          document
+            .getElementById("myButton")
+            .addEventListener("click", function () {
+              // Using Sweet Alert with image and title
+              Swal.fire({
+                html:
+                  '<img src="./assets/images/added-icon.svg" alt="Custom Image" class="custom-img">' +
+                  '<h5 style="font-weight: 600;">Social Link Added Successfully</h5>',
+                showConfirmButton: false,
+              });
+            });
+        </script>
+        <!-- Sweet Alert Update Button JavaScript -->
+
+        <script>
+          document
+            .getElementById("updateButton")
+            .addEventListener("click", function () {
+              // Using Sweet Alert with image and title
+              Swal.fire({
+                html:
+                  '<img src="./assets/images/added-icon.svg" alt="Custom Image" class="custom-img">' +
+                  '<h5 style="font-weight: 600;">Social Link Updated Successfully</h5>',
+                showConfirmButton: false,
+              });
+            });
+        </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
